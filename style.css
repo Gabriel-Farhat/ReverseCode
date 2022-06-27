@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #000000;
+    --cor2: #010626;
+    --cor3: #021859;
+    --cor4: #044BD9;
+    --cor5: #0455BF;
+    --cor6: #0487D9;
+    --cor7: #0D0D0D;
+    --cor8: #ffffff;
+    
+    
+}
+
+
+body {
+    
+    height: 100vh;
+    background-color: var(--cor8);
+    background-image: url(Imagens/fundoreversecode.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(Imagens/quadradoreverse.png);
+    background-repeat: repeat;
+    background-size: 50px 50px;
+    animation: animatedBackground 20s linear infinite;
+}
+
+@media only screen
+and (min-width: 820px) {
+    body {
+        animation: animatedBackground 60s linear infinite;
+    }
+}
+
+@keyframes animatedBackground {
+    from {
+      background-position: 0% 0%;
+    }
+    to {
+      background-position: 100% 100%;
+    }
+  }
+
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.logoreverse {
+    display: flex;
+    width: 300px;
+    height: 105px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+
+
+.fotoetexto {
+    text-align: center;
+    
+}
+
+
+
+.eu {
+    width: 190px;
+    height: 171px;
+    
+
+}
+
+
+
+ul {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+
+li {
+    width: 100%;
+}
+
+
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    width: 300px;
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    position: relative;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    text-align: start;
+}
+
+button:hover {
+    background-color: #F2B05E;
+    color: #F23078;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    right: -11px;
+    top: 1px;
+    width: 98%;
+    height: 98%;
+    background-color: #000000;
+    background-size: 12px, 100%;
+    border: 0.4rem solid #000;
+    z-index: -2;
+    
+}
+
+.ig {
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.sou {
+    color: #A6036D;
+    font-size: 1rem;
+    
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+.vetor {
+
+    margin: 0;
+    height: 20px;
+    margin-right: 15px;
+}
+     
+
